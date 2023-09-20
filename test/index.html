@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="/css/pannellum.css">
+    <!-- Paste the CSS reset from meyer -->
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <script src="/js/pannellum.js"></script>
+    <div id="panorama"></div>
+    <script>
+    pannellum.viewer('panorama', {
+        "type": "equirectangular",
+        "panorama": "/test/markjose.jpg",
+        "autoLoad": true,
+        "hfov": 120,
+        "title": "Mark & Jose",
+        "author": "@josedanield10",
+        // "hotSpotDebug": true,
+        "hotSpots": [
+            {
+                "pitch": "-22.80799969990325", 
+                "yaw": "-64.99248932844317",
+                "type": "info",
+                "text": "Mouse Logitech G305",
+                "URL": "https://www.logitechg.com/es-roam/products/gaming-mice/g305-lightspeed-wireless-gaming-mouse.910-005283.html"
+            },
+            {
+                "pitch": "4.544662921131713",
+                "yaw": "-83.2621679671172",
+                "type": "info",
+                "text": "Monitor Samsung 27 Odyssey G4",
+                "URL": "https://www.samsung.com/co/monitors/odyssey-g4-27-inch-1000r-curved-gaming-monitor-lc27g54tqwlxkr/"
+            }
+        ]
+    });
+    </script>
+</body>
+</html>
