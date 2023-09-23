@@ -86,6 +86,8 @@
     <script>
     const viewer = pannellum.viewer('panorama', {
         "autoLoad": true,
+        "autoRotateInactivityDelay": 5000,
+        "autoRotate": 3,
         "default": {
             "firstScene": "exterior",
             "sceneFadeDuration": 1000,
@@ -130,7 +132,7 @@
 
             "entrada": {
                 "type": "equirectangular",
-                "panorama": "/Cucuta/MuseoDeMemoria/EntradaDia_01.jpg",
+                "panorama": "/Cucuta/MuseoDeMemoria/Editadas/Editada.jpg",
                 "title": "Museo de la Memoria",
                 "hfov": 120,
                 "pitch": -18,
