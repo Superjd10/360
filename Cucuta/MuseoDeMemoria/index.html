@@ -14,12 +14,20 @@
             height: 100%;
             width: 100%;
         }
+
+        .pnlm-panorama-info {
+            bottom: 0px;
+        }
+        .pnlm-title-box {
+            margin-bottom: 0;
+        }
+
         .custom-hotspot {
-            background-image: url("/css/arrow-top.svg");
+            background-image: url("/css/flecha.svg");
             background-repeat: no-repeat;
             background-position: center;
-            width: 100px;
-            height: 100px;
+            width: 60px;
+            height: 60px;
         }
         div.custom-tooltip-white span {
             visibility: hidden;
@@ -91,7 +99,8 @@
         "default": {
             "firstScene": "exterior",
             "sceneFadeDuration": 1000,
-            "author": "\<a\ href\=\"https:\/\/josedanield10.com\">José Daniel Durán<\/a\> (Ingeniero Electrónico)\nGabriela Reales (Diseñadora Gráfica Oficina de las TIC)\nPaola Rolón (Comunicadora Social Oficina de las TIC\nMónica Fonseca (Secretaria Oficina de las TIC) \nGracias a: \<a\ href\=\"https:\/\/vakano.studio\">VaKaNo Studio\<\/a\> (Equipos Audiovisuales)",
+            "author": "\<small\> \<a\ href\=\"https:\/\/josedanield10.com\">José Daniel Durán<\/a\> (\<a\ href\=\"https:\/\/vakano.studio\">VaKaNo Studio\<\/a\>) \<\/small\>",
+            // (Ingeniero Electrónico)\nGabriela Reales (Diseñadora Gráfica Oficina de las TIC)\nPaola Rolón (Comunicadora Social Oficina de las TIC\nMónica Fonseca (Secretaria Oficina de las TIC) \nGracias a: \<a\ href\=\"https:\/\/vakano.studio\">VaKaNo Studio\<\/a\> (Equipos Audiovisuales)
         },
         "scenes": {
             "exterior": {
@@ -103,16 +112,8 @@
                 "yaw": -10,
                 "hotSpots": [
                     {
-                        "pitch": -10,
-                        "yaw": -35,
-                        "type": "scene",
-                        "scale": 50,
-                        "text": "Entrada \nMuseo de la Memoria",
-                        "sceneId": "entrada"
-                    },
-                    {
-                        "pitch": -12,
-                        "yaw": -21,
+                        "pitch": -14,
+                        "yaw": -27,
                         "type": "scene",
                         "scale": 50,
                         "text": "Entrada \nMuseo de la Memoria",
@@ -143,7 +144,8 @@
                         "yaw": 177,
                         "type": "scene",
                         "text": "Secretaría de Cultura de Cúcuta",
-                        "sceneId": "exterior"
+                        "sceneId": "exterior",
+                        "cssClass": "custom-hotspot"
                     },
                     {
                         "pitch": -7,
@@ -182,7 +184,7 @@
         "strings": {
             "loadButtonLabel": "Click para\nCargar\nPanorama",
             "loadingLabel": "Cargando...",
-            "bylineLabel": "Tour realizado por: \n%s",
+            "bylineLabel": "📷 %s",
 
             "noPanoramaError": "No se especificó una imagen panorámica.",
             "fileAccessError": "No se pudo acceder al archivo %s.",
