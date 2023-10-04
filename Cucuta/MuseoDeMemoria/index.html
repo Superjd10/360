@@ -29,6 +29,9 @@
             width: 60px;
             height: 60px;
         }
+        div.pnlm-tooltip span {
+            min-width: 90px;
+        }
         div.custom-tooltip-white span {
             visibility: hidden;
             position: absolute;
@@ -105,7 +108,7 @@
         "scenes": {
             "exterior": {
                 "type": "equirectangular",
-                "panorama": "/Cucuta/MuseoDeMemoria/ExteriorDia_04.jpg",
+                "panorama": "/Cucuta/MuseoDeMemoria/Editadas/Fachada.jpg",
                 "title": "Secretaría de Cultura de Cúcuta",
                 "hfov": 120,
                 "pitch": 4,
@@ -133,11 +136,11 @@
 
             "entrada": {
                 "type": "equirectangular",
-                "panorama": "/Cucuta/MuseoDeMemoria/Editadas/Editada.jpg",
+                "panorama": "/Cucuta/MuseoDeMemoria/Editadas/Entrada.jpg",
                 "title": "Museo de la Memoria",
                 "hfov": 120,
-                "pitch": -18,
-                "yaw": -17,
+                "pitch": -11,
+                "yaw": 3,
                 "hotSpots": [
                     {
                         "pitch": -25,
@@ -145,6 +148,22 @@
                         "type": "scene",
                         "text": "Secretaría de Cultura de Cúcuta",
                         "sceneId": "exterior",
+                        "cssClass": "custom-hotspot"
+                    },
+                    {
+                        "pitch": -36,
+                        "yaw": -80,
+                        "type": "scene",
+                        "text": "Salón 1",
+                        "sceneId": "salon1",
+                        "cssClass": "custom-hotspot"
+                    },
+                    {
+                        "pitch": -28,
+                        "yaw": 47,
+                        "type": "scene",
+                        "text": "Salón Central",
+                        "sceneId": "salonCentral",
                         "cssClass": "custom-hotspot"
                     },
                     {
@@ -163,24 +182,218 @@
                     }
                 ]
             },
+
+            "salon1": {
+                "type": "equirectangular",
+                "panorama": "/Cucuta/MuseoDeMemoria/Editadas/Salon1.jpg",
+                "title": "Salón 1",
+                "hfov": 120,
+                "pitch": -7,
+                "yaw": -7,
+                "hotSpots": [
+                    {
+                        "pitch": -36,
+                        "yaw": -115,
+                        "type": "scene",
+                        "text": "Entrada \nMuseo de la Memoria",
+                        "sceneId": "entrada",
+                        "cssClass": "custom-hotspot"
+                    },
+                    {
+                        "pitch": -36,
+                        "yaw": 161,
+                        "type": "scene",
+                        "text": "Salón Central",
+                        "sceneId": "salonCentral",
+                        "cssClass": "custom-hotspot"
+                    },
+                    {
+                        "pitch": -36,
+                        "yaw": 66,
+                        "type": "scene",
+                        "text": "Salón 2",
+                        "sceneId": "salon2",
+                        "cssClass": "custom-hotspot"
+                    }
+                ]
+            },
+
+            "salon2": {
+                "type": "equirectangular",
+                "panorama": "/Cucuta/MuseoDeMemoria/Editadas/Salon2.jpg",
+                "title": "Salón 2",
+                "hfov": 120,
+                "pitch": -12,
+                "yaw": 29,
+                "hotSpots": [
+                    {
+                        "pitch": -24,
+                        "yaw": -125,
+                        "type": "scene",
+                        "text": "Salón 1",
+                        "sceneId": "salon1",
+                        "cssClass": "custom-hotspot"
+                    },
+                    {
+                        "pitch": -26,
+                        "yaw": 172,
+                        "type": "scene",
+                        "text": "Salón 3",
+                        "sceneId": "salon3",
+                        "cssClass": "custom-hotspot"
+                    }
+                ]
+            },
+
+            "salon3": {
+                "type": "equirectangular",
+                "panorama": "/Cucuta/MuseoDeMemoria/Editadas/Salon3.jpg",
+                "title": "Salón 3",
+                "hfov": 120,
+                "pitch": -13,
+                "yaw": -158,
+                "hotSpots": [
+                    {
+                        "pitch": -53,
+                        "yaw": 86,
+                        "type": "scene",
+                        "text": "Salón 2",
+                        "sceneId": "salon2",
+                        "cssClass": "custom-hotspot"
+                    },
+                    {
+                        "pitch": -32,
+                        "yaw": -79,
+                        "type": "scene",
+                        "text": "Salón Central",
+                        "sceneId": "salonCentral",
+                        "cssClass": "custom-hotspot"
+                    }
+                ]
+            },
+
+            "salonCentral": {
+                "type": "equirectangular",
+                "panorama": "/Cucuta/MuseoDeMemoria/Editadas/SalonCentral.jpg",
+                "title": "Salón Central",
+                "hfov": 120,
+                "pitch": -18,
+                "yaw": 0,
+                "hotSpots": [
+                    {
+                        "pitch": -7,
+                        "yaw": -31,
+                        "type": "scene",
+                        "text": "Entrada \nMuseo de la Memoria",
+                        "sceneId": "entrada",
+                        "cssClass": "custom-hotspot"
+                    },
+                    {
+                        "pitch": -21,
+                        "yaw": 61,
+                        "type": "scene",
+                        "text": "Salón 1",
+                        "sceneId": "salon1",
+                        "cssClass": "custom-hotspot"
+                    },
+                    {
+                        "pitch": -25,
+                        "yaw": 94,
+                        "type": "scene",
+                        "text": "Salón 3",
+                        "sceneId": "salon3",
+                        "cssClass": "custom-hotspot"
+                    },
+                    {
+                        "pitch": -31,
+                        "yaw": -125,
+                        "type": "scene",
+                        "text": "Salón 4",
+                        "sceneId": "salon4",
+                        "cssClass": "custom-hotspot"
+                    },
+                    {
+                        "pitch": -17,
+                        "yaw": -67,
+                        "type": "scene",
+                        "text": "Salón 7",
+                        "sceneId": "salon7",
+                        "cssClass": "custom-hotspot"
+                    }
+                ]
+            },
+
+            "salon4": {
+                "type": "equirectangular",
+                "panorama": "/Cucuta/MuseoDeMemoria/Editadas/Salon4.jpg",
+                "title": "Salón 4",
+                "hfov": 120,
+                "pitch": -8,
+                "yaw": -18,
+                "hotSpots": [
+                    {
+                        "pitch": -33,
+                        "yaw": -76,
+                        "type": "scene",
+                        "text": "Salón 5",
+                        "sceneId": "salon5",
+                        "cssClass": "custom-hotspot"
+                    },
+                    {
+                        "pitch": -23,
+                        "yaw": 55,
+                        "type": "scene",
+                        "text": "Salón 7",
+                        "sceneId": "salon7",
+                        "cssClass": "custom-hotspot"
+                    },
+                    {
+                        "pitch": -23,
+                        "yaw": 95,
+                        "type": "scene",
+                        "text": "Salón Central",
+                        "sceneId": "salonCentral",
+                        "cssClass": "custom-hotspot"
+                    }
+                ]
+            },
+
+            "salon5": {
+                "type": "equirectangular",
+                "panorama": "/Cucuta/MuseoDeMemoria/Editadas/Salon5.jpg",
+                "title": "Salón 5",
+                "hfov": 120,
+                "pitch": -10,
+                "yaw": 6,
+                "hotSpots": [
+                    {
+                        "pitch": -49,
+                        "yaw": -58,
+                        "type": "scene",
+                        "text": "Salón 6",
+                        "sceneId": "salon6",
+                        "cssClass": "custom-hotspot"
+                    },
+                    {
+                        "pitch": -48,
+                        "yaw": 62,
+                        "type": "scene",
+                        "text": "Salón 4",
+                        "sceneId": "salon4",
+                        "cssClass": "custom-hotspot"
+                    },
+                    {
+                        "pitch": -14,
+                        "yaw": 32,
+                        "type": "scene",
+                        "text": "Salón Central",
+                        "sceneId": "salonCentral",
+                        "cssClass": "custom-hotspot"
+                    }
+                ]
+            },
         },
         "hotSpotDebug": false,
-        // "hotSpots": [
-        //     {
-        //         "pitch": "-22.80799969990325", 
-        //         "yaw": "-64.99248932844317",
-        //         "type": "info",
-        //         "text": "Mouse Logitech G305",
-        //         "URL": "https://www.logitechg.com/es-roam/products/gaming-mice/g305-lightspeed-wireless-gaming-mouse.910-005283.html"
-        //     },
-        //     {
-        //         "pitch": "4.544662921131713",
-        //         "yaw": "-83.2621679671172",
-        //         "type": "info",
-        //         "text": "Monitor Samsung 27 Odyssey G4",
-        //         "URL": "https://www.samsung.com/co/monitors/odyssey-g4-27-inch-1000r-curved-gaming-monitor-lc27g54tqwlxkr/"
-        //     }
-        // ]
         "strings": {
             "loadButtonLabel": "Click para\nCargar\nPanorama",
             "loadingLabel": "Cargando...",
